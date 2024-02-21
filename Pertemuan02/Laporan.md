@@ -71,3 +71,4 @@ Jawab : agar ada nilai yang bisa dijumlahkan dengan stom untuk memperbarui nilai
 <b>Latihan</b>
 <p>1. Membuat method baru pada class Buku</p>
 <p><img src="gambar/latihan1.jpg"></p>
+<p><img src="gambar/hasil_latihan1.jpg"></p>

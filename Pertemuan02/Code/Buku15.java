@@ -47,13 +47,13 @@ public class Buku15 {
 
     int hitungDiskon() {
         int total = hitungHargaTotal();
-        int diskon = 0;
         if (total > 150000) {
-            diskon = 12 / 100 * total;
+            return (total * 12 / 100);
         } else if (total >= 75000 && total <= 150000) {
-            diskon = 5 / 100 * total;
+            return (total * 5 / 100);
+        } else {
+            return 0;
         }
-        return diskon;
     }
 
     int hitungHargaBayar() {
