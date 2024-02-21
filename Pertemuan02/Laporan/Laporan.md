@@ -16,17 +16,15 @@
     <img src="gambar/hasil_percobaan1">
 </p>
 <p>Pertanyaan</p>
-<ol>
-<li>1. Sebutkan dua karakteristik class atau object!</li>
-<li>Jawab : class merupakan konsep atau rancangan dari sutu objek dan bersifat umum, sedangkan objek merupakan realisasi dari suatu class dan bersifat spesifik</li>
-<li>2. Perhatikan class Buku pada Praktikum 1 tersebut, ada berapa atribut yang dimiliki oleh class Buku? Sebutkan apa saja atributnya!</li>
-<li>Jawab : 5 atribut, judul, pengarang, halaman, stok, harga</li>
-<li>3. Ada berapa method yang dimiliki oleh class tersebut? Sebutkan apa saja methodnya!</li>
-<li>Jawab : 4 method, tampil, terjual, restock, dan gantiHarga</li>
-<li>>4. Perhatikan method terjual() yang terdapat di dalam class Buku. Modifikasi isi method tersebut sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih besar dari 0)!</li>
+<p>1. Sebutkan dua karakteristik class atau object!</p>
+<p>Jawab : class merupakan konsep atau rancangan dari sutu objek dan bersifat umum, sedangkan objek merupakan reapsasi dari suatu class dan bersifat spesifik</p>
+<p>2. Perhatikan class Buku pada Praktikum 1 tersebut, ada berapa atribut yang dimipki oleh class Buku? Sebutkan apa saja atributnya!</p>
+<p>Jawab : 5 atribut, judul, pengarang, halaman, stok, harga</p>
+<p>3. Ada berapa method yang dimipki oleh class tersebut? Sebutkan apa saja methodnya!</p>
+<p>Jawab : 4 method, tampil, terjual, restock, dan gantiHarga</p>
+<p>>4. Perhatikan method terjual() yang terdapat di dalam class Buku. Modifikasi isi method tersebut sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih besar dari 0)!</p>
 Jawab : dengan menambahkan if dengan kondisi stok>0 seperti
 <img src="gambar/modifikasi_no4_percobaan1">
-<li>5. Menurut Anda, mengapa method restock() mempunyai satu parameter berupa bilangan int?</li>
+<p>5. Menurut Anda, mengapa method restock() mempunyai satu parameter berupa bilangan int?</p>
 Jawab : agar ada nilai yang bisa dijumlahkan dengan stom untuk memperbarui nilai stok awal
-<li>6. Commit dan push kode program ke Github</li>
-</ol>
+<p>6. Commit dan push kode program ke Github</p>
