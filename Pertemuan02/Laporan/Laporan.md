@@ -12,3 +12,7 @@
 <p align="center">
     <img src="https://drive.google.com/file/d/1Hk4d6QoDTy9JmmCK-0Q6rsFQWmei6r9J/view?usp=sharing">
 </p>
+<p>Hasil Program : </p>
+<p align="center">
+    <img src="gambar/hasil_percobaan1">
+</p>
