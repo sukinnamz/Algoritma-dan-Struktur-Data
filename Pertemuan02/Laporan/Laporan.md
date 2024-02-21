@@ -67,3 +67,7 @@ Jawab : agar ada nilai yang bisa dijumlahkan dengan stom untuk memperbarui nilai
 <p>5. Buat object baru dengan nama buku<NamaMahasiswa> menggunakan konstruktor berparameter dari class Buku! </p>
 <p>Buku15 bkInnama = new Buku15("Biografi Innama Maesa", "Innama Maesa", 100, 50, 73000);</p>
 <p>dan jika ingin menampilkan objek tersebut bisa dipanggil dengan menggunakan bkInnama.tampilInformasi();</p>
+<hr>
+<b>Latihan</b>
+<p>1. Membuat method baru pada class Buku</p>
+<p><img src="gambar/latihan1.jpg"></p>

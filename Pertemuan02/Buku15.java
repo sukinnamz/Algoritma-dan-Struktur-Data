@@ -1,7 +1,7 @@
 
 public class Buku15 {
     String judul, pengarang;
-    int halaman, stok, harga;
+    int halaman, stok, harga, terjual;
 
     public Buku15() {
 
@@ -24,7 +24,8 @@ public class Buku15 {
     }
 
     void terjual(int jml) {
-        if (stok > 0 && jml < stok) {
+        if (stok > 0 && jml <= stok) {
+            terjual = jml;
             stok -= jml;
         } else {
             System.out.println("Jumlah terjual melebihi stok");
@@ -37,5 +38,28 @@ public class Buku15 {
 
     void gantiHarga(int hrg) {
         harga = hrg;
+    }
+
+    int hitungHargaTotal() {
+        int hargaTotal = terjual * harga;
+        return hargaTotal;
+    }
+
+    int hitungDiskon() {
+        int total = hitungHargaTotal();
+        int diskon = 0;
+        if (total > 150000) {
+            diskon = 12 / 100 * total;
+        } else if (total >= 75000 && total <= 150000) {
+            diskon = 5 / 100 * total;
+        }
+        return diskon;
+    }
+
+    int hitungHargaBayar() {
+        int total = hitungHargaTotal();
+        int diskon = hitungDiskon();
+        int bayar = total - diskon;
+        return bayar;
     }
 }
