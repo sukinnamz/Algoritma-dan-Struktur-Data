@@ -1,3 +1,4 @@
+
 public class Buku15 {
     String judul, pengarang;
     int halaman, stok, harga;
