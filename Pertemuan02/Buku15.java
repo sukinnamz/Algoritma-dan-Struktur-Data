@@ -24,8 +24,10 @@ public class Buku15 {
     }
 
     void terjual(int jml) {
-        if (jml > 0) {
+        if (stok > 0 && jml < stok) {
             stok -= jml;
+        } else {
+            System.out.println("Jumlah terjual melebihi stok");
         }
     }
 

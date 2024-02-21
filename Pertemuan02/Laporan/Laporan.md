@@ -17,13 +17,13 @@
 </p>
 <p>Pertanyaan</p>
 <p>1. Sebutkan dua karakteristik class atau object!</p>
-<p>Jawab : class merupakan konsep atau rancangan dari sutu objek dan bersifat umum, sedangkan objek merupakan reapsasi dari suatu class dan bersifat spesifik</p>
+<p>Jawab : class merupakan konsep atau rancangan dari suatu objek dan bersifat umum, sedangkan objek merupakan reapsasi dari suatu class dan bersifat spesifik</p>
 <p>2. Perhatikan class Buku pada Praktikum 1 tersebut, ada berapa atribut yang dimipki oleh class Buku? Sebutkan apa saja atributnya!</p>
 <p>Jawab : 5 atribut, judul, pengarang, halaman, stok, harga</p>
 <p>3. Ada berapa method yang dimipki oleh class tersebut? Sebutkan apa saja methodnya!</p>
 <p>Jawab : 4 method, tampil, terjual, restock, dan gantiHarga</p>
 <p>4. Perhatikan method terjual() yang terdapat di dalam class Buku. Modifikasi isi method tersebut sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih besar dari 0)!</p>
-Jawab : dengan menambahkan if dengan kondisi stok>0 seperti <p><img src="gambar/modifikasi_no4_percobaan1"></p>
+Jawab : dengan menambahkan if dengan kondisi stok>0 dan jml kurang dari 0 seperti <p><img src="gambar/modifikasi_no4_percobaan1"></p>
 <p>5. Menurut Anda, mengapa method restock() mempunyai satu parameter berupa bilangan int?</p>
 Jawab : agar ada nilai yang bisa dijumlahkan dengan stom untuk memperbarui nilai stok awal
 <p>6. Commit dan push kode program ke Github</p>
@@ -48,9 +48,22 @@ Jawab : agar ada nilai yang bisa dijumlahkan dengan stom untuk memperbarui nilai
 <b>2.3 Percobaan 3</b>
 <p>Kode Program : </p>
 <p align="center">
-    <img src="gambar/kode_percobaan2">
+    <img src="gambar/kode1_percobaan3">
+    <img src="gambar/kode2_percobaan3">
 </p>
 <p>Hasil Program : </p>
 <p align="center">
-    <img src="gambar/hasil_percobaan2">
+    <img src="gambar/hasil_percobaan3">
 </p>
+<p>Pertanyaan</p>
+<p>1. Pada class Buku di Percobaan 3, tunjukkan baris kode program yang digunakan untuk mendeklarasikan konstruktor berparameter!</p>
+<p>Jawab : public Buku15(String jud, String pg, int hal, int stok, int har) {}</p>
+<p>2. Perhatikan class BukuMain. Apa sebenarnya yang dilakukan pada baris program berikut?</p>
+<p>Jawab : instansiasi objek dengan mengakses atribut objek melalui konstruktor berparameter dan memberi nilai atribut pada konstruktor berparameter</p>
+<p>3. Hapus konstruktor default pada class Buku, kemudian compile dan run program. Bagaimana hasilnya? Jelaskan mengapa hasilnya demikian!</p>
+<p>Jawab : Akan terjadi error pada instansiasi objek yang menggunakan konstruktor default, dikarenakan saat instansiasi tersebut, tidak ada parameter dalam konstruktor buku yang sesuai pada class buku</p>
+<p>4. Setelah melakukan instansiasi object, apakah method di dalam class Buku harus diakses secara berurutan? Jelaskan alasannya!</p>
+<p>Tidak, karena method adalah hal hal yang bisa dilakukan oleh objek dan pemrogrmanan berbasis objek tidak bersifat struktural jadi pemanggilan method bebas seperti pada contoh pemanggilan informasi buku setelah merubah harga</p>
+<p>5. Buat object baru dengan nama buku<NamaMahasiswa> menggunakan konstruktor berparameter dari class Buku! </p>
+<p>Buku15 bkInnama = new Buku15("Biografi Innama Maesa", "Innama Maesa", 100, 50, 73000);</p>
+<p>dan jika ingin menampilkan objek tersebut bisa dipanggil dengan menggunakan bkInnama.tampilInformasi();</p>

@@ -15,5 +15,8 @@ public class BukuMain15 {
         Buku15 bk2 = new Buku15("Self Reward", "Maheera Ayesha", 160, 29, 59000);
         bk2.terjual(11);
         bk2.tampilInformasi();
+
+        Buku15 bkInnama = new Buku15("Biografi Innama Maesa", "Innama Maesa", 100, 50, 73000);
+        bkInnama.tampilInformasi();
     }
 }
