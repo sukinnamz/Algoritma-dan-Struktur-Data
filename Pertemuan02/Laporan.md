@@ -9,11 +9,11 @@
 <b>2.1 Percobaan 1</b>
 <p>Kode Program : </p>
 <p align="center">
-    <img src="https://drive.google.com/file/d/1Hk4d6QoDTy9JmmCK-0Q6rsFQWmei6r9J/view?usp=sharing">
+    <img src="gambar/kode_percobaan1.jpg">
 </p>
 <p>Hasil Program : </p>
 <p align="center">
-    <img src="gambar/hasil_percobaan1">
+    <img src="gambar/hasil_percobaan1.jpg">
 </p>
 <p>Pertanyaan</p>
 <p>1. Sebutkan dua karakteristik class atau object!</p>
@@ -23,7 +23,7 @@
 <p>3. Ada berapa method yang dimipki oleh class tersebut? Sebutkan apa saja methodnya!</p>
 <p>Jawab : 4 method, tampil, terjual, restock, dan gantiHarga</p>
 <p>4. Perhatikan method terjual() yang terdapat di dalam class Buku. Modifikasi isi method tersebut sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih besar dari 0)!</p>
-Jawab : dengan menambahkan if dengan kondisi stok>0 dan jml kurang dari 0 seperti <p><img src="gambar/modifikasi_no4_percobaan1"></p>
+Jawab : dengan menambahkan if dengan kondisi stok>0 dan jml kurang dari 0 seperti <p><img src="gambar/modifikasi_no4_percobaan1.jpg"></p>
 <p>5. Menurut Anda, mengapa method restock() mempunyai satu parameter berupa bilangan int?</p>
 Jawab : agar ada nilai yang bisa dijumlahkan dengan stom untuk memperbarui nilai stok awal
 <p>6. Commit dan push kode program ke Github</p>
@@ -31,11 +31,11 @@ Jawab : agar ada nilai yang bisa dijumlahkan dengan stom untuk memperbarui nilai
 <b>2.2 Percobaan 2</b>
 <p>Kode Program : </p>
 <p align="center">
-    <img src="gambar/kode_percobaan2">
+    <img src="gambar/kode_percobaan2.jpg">
 </p>
 <p>Hasil Program : </p>
 <p align="center">
-    <img src="gambar/hasil_percobaan2">
+    <img src="gambar/hasil_percobaan2.jpg">
 </p>
 <p>Pertanyaan<p>
 <p>1. Pada class BukuMain, tunjukkan baris kode program yang digunakan untuk proses instansiasi! Apa nama object yang dihasilkan?</p>
@@ -48,12 +48,12 @@ Jawab : agar ada nilai yang bisa dijumlahkan dengan stom untuk memperbarui nilai
 <b>2.3 Percobaan 3</b>
 <p>Kode Program : </p>
 <p align="center">
-    <img src="gambar/kode1_percobaan3">
-    <img src="gambar/kode2_percobaan3">
+    <img src="gambar/kode1_percobaan3.jpg">
+    <img src="gambar/kode2_percobaan3.jpg">
 </p>
 <p>Hasil Program : </p>
 <p align="center">
-    <img src="gambar/hasil_percobaan3">
+    <img src="gambar/hasil_percobaan3.jpg">
 </p>
 <p>Pertanyaan</p>
 <p>1. Pada class Buku di Percobaan 3, tunjukkan baris kode program yang digunakan untuk mendeklarasikan konstruktor berparameter!</p>

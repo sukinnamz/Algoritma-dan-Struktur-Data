@@ -18,5 +18,7 @@ public class BukuMain15 {
 
         Buku15 bkInnama = new Buku15("Biografi Innama Maesa", "Innama Maesa", 100, 50, 73000);
         bkInnama.tampilInformasi();
+        bkInnama.hitungHargaTotal();
+        
     }
 }
