@@ -10,5 +10,5 @@
 <hr>
 <p>Kode Program : </p>
 <p align="center">
-    <img src="gambar/kode_pertemuan1.jpg">
+    <img src="https://drive.google.com/file/d/1Hk4d6QoDTy9JmmCK-0Q6rsFQWmei6r9J/view?usp=sharing">
 </p>
