@@ -44,3 +44,13 @@ Jawab : agar ada nilai yang bisa dijumlahkan dengan stom untuk memperbarui nilai
 <p>Jawab : dengan menyebutkan namaObjek.atribut seperti pada bk1.judul kemudian mengisikan nilai yang sesuai dengan atribut</p>
 <p>3. Mengapa hasil output pemanggilan method tampilInformasi() pertama dan kedua berbeda?</p>
 <p>Jawab : karena pada pemanggilan method tampilInformasi() pertama yang ditampilkan adalah data yang sudah di tambahkan nilainya dengan mengakses atribut objek. Namun pada method tampilInformasi() yang kedua, telah dilakukan pemanggilan fungsi terjual() yang mana akan mengurangi stok dan gantiharga() yang mengubah nilai harga</p>
+<hr>
+<b>2.3 Percobaan 3</b>
+<p>Kode Program : </p>
+<p align="center">
+    <img src="gambar/kode_percobaan2">
+</p>
+<p>Hasil Program : </p>
+<p align="center">
+    <img src="gambar/hasil_percobaan2">
+</p>
