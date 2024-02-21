@@ -6,9 +6,9 @@
 <p align="center">Nama : Innama Maesa Putri</p>
 <p align="center">NIM : 2341720235</p>
 <hr>
-# 2.1 Percobaan 1
+<b>2.1 Percobaan 1</b>
 <hr>
 <p>Kode Program : </p>
 <p align="center">
-    <img src="gambar/kode_pertemuan1.jpg>
+    <img src="gambar/kode_pertemuan1.jpg">
 </p>
