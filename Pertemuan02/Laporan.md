@@ -70,5 +70,13 @@ Jawab : agar ada nilai yang bisa dijumlahkan dengan stom untuk memperbarui nilai
 <hr>
 <b>Latihan</b>
 <p>1. Membuat method baru pada class Buku</p>
+<p>Kode Program : </p>
 <p><img src="gambar/latihan1.jpg"></p>
+<p>Hasil Program : </p>
 <p><img src="gambar/hasil_latihan1.jpg"></p>
+<p>2. Membuat game dragon dengan konsep OOP</p>
+<p>Kode Program : </p>
+<p><img src="gambar/kode_latihan2.png"></p>
+<p><img src="gambar/kode_main_latihan2.jpg"></p>
+<p>Hasil Program : </p>
+<p><img src="gambar/hasil_latihan2.jpg"></p>
