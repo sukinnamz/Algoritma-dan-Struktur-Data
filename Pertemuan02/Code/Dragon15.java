@@ -20,7 +20,7 @@ public class Dragon15 {
     void moveUp() {
         y++;
         printPosisition();
-        if (y < 0 || y > width) {
+        if (y < 0 || y > height) {
             detectCollison(x, y);
         }
     }
@@ -28,7 +28,7 @@ public class Dragon15 {
     void moveDown() {
         y--;
         printPosisition();
-        if (y < 0 || y > width) {
+        if (y < 0 || y > height) {
             detectCollison(x, y);
         }
     }
