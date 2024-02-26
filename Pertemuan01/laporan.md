@@ -39,3 +39,9 @@
 <p>Hasil Program : </p>
 <p><img src = "gambar/hasil_Tugas1.jpg"></p>
 <hr>
+<p>1. Membuat program hitung jarak, kecepatam, waktu</p>
+<p>Kode Program : </p>
+<p><img src = "gambar/kode_Tugas2.png"></p>
+<p>Hasil Program : </p>
+<p><img src = "gambar/hasil_Tugas2.jpg"></p>
+<hr>
