@@ -13,3 +13,16 @@
 <p><img src = "gambar/hasil_pemilihan.jpg"></p>
 <p>Hasil Program jika tidak valid : </p>
 <p><img src = "gambar/hasil2_pemilihan.jpg"></p>
+<hr>
+<b>2.2 Perulangan</b>
+<p>Kode Program : </p>
+<p><img src = "gambar/kode_perulangan.png"></p>
+<p>Hasil Program : </p>
+<p><img src = "gambar/hasil_perulangan.jpg"></p>
+<hr>
+<b>2.3 Array</b>
+<p>Kode Program : </p>
+<p><img src = "gambar/kode_array.png"></p>
+<p>Hasil Program : </p>
+<p><img src = "gambar/hasil_array.jpg"></p>
+<hr>
