@@ -26,3 +26,9 @@
 <p>Hasil Program : </p>
 <p><img src = "gambar/hasil_array.jpg"></p>
 <hr>
+<b>2.4 Fungsi</b>
+<p>Kode Program : </p>
+<p><img src = "gambar/kode_fungsi.png"></p>
+<p>Hasil Program : </p>
+<p><img src = "gambar/hasil_fungsi.jpg"></p>
+<hr>
