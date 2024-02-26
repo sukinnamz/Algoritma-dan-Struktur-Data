@@ -32,3 +32,10 @@
 <p>Hasil Program : </p>
 <p><img src = "gambar/hasil_fungsi.jpg"></p>
 <hr>
+<b>Tugas</b>
+<p>1. Membuat pencarian plat</p>
+<p>Kode Program : </p>
+<p><img src = "gambar/kode_Tugas1.png"></p>
+<p>Hasil Program : </p>
+<p><img src = "gambar/hasil_Tugas1.jpg"></p>
+<hr>
