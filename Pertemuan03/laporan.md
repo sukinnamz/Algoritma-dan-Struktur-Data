@@ -77,3 +77,8 @@ tersebut. Asumsi segitiga adalah segitiga siku-siku. (Hint: Anda dapat menggunak
 <p><img src="gambar/kode_main_modifikasi.png"></p>
 <p>Hasil program (setelah modifikasi) : </p>
 <p><img src="gambar/hasil_bangunRuang.jpg"></p>
+<p>2. Mendata Informasi Mahasiswa</p>
+<p>Kode program : </p>
+<p><img src="gambar/kode_tugas2.png"></p>
+<p>Hasil Program : </p>
+<p><img src="gambar/hasil_tugas2.jpg"></p>
