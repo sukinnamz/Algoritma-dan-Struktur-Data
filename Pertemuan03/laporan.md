@@ -78,7 +78,16 @@ tersebut. Asumsi segitiga adalah segitiga siku-siku. (Hint: Anda dapat menggunak
 <p>Hasil program (setelah modifikasi) : </p>
 <p><img src="gambar/hasil_bangunRuang.jpg"></p>
 <p>2. Mendata Informasi Mahasiswa</p>
-<p>Kode program : </p>
+<p>Kode program Class: </p>
+<p><img src="gambar/kode_classtugas2.png"></p>
+<p>Kode program Main: </p>
 <p><img src="gambar/kode_tugas2.png"></p>
 <p>Hasil Program : </p>
 <p><img src="gambar/hasil_tugas2.jpg"></p>
+<p>3. Modifikasi Tugas 2</p>
+<p>Kode program Class: </p>
+<p><img src="gambar/kode_classtugas3.png"></p>
+<p>Kode program Main: </p>
+<p><img src="gambar/kode_tugas3.png"></p>
+<p>Hasil Program : </p>
+<p><img src="gambar/hasil_tugas3.jpg"></p>

@@ -7,6 +7,7 @@ public class InformasiMahasiswaMain {
         Scanner sc = new Scanner(System.in);
         Scanner sa = new Scanner(System.in);
         InformasiMahasiswa[] mhs = new InformasiMahasiswa[3];
+
         for (int i = 0; i < mhs.length; i++) {
             mhs[i] = new InformasiMahasiswa();
             System.out.println("Masukkan data mahasiswa ke- " + (i + 1));
@@ -27,6 +28,9 @@ public class InformasiMahasiswaMain {
             System.out.println("Jenis Kelamin : " + mhs[i].jenis_kelamin);
             System.out.println("Nilai IPK : " + mhs[i].ipk);
         }
-
+        System.out.println();
+        InformasiMahasiswa umum = new InformasiMahasiswa();
+        System.out.println("Rata-rata IPK : " + umum.rataRataIPK(mhs));
+        umum.IPKTerbesar(mhs);
     }
 }
