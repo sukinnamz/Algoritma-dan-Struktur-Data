@@ -62,3 +62,18 @@ tersebut. Asumsi segitiga adalah segitiga siku-siku. (Hint: Anda dapat menggunak
 <p><img src="gambar/pertanyaan4_segitiga.jpg"></p>
 <p>5. Kemudian menggunakan looping, cetak luas dan keliling dengan cara memanggil method hitungLuas() dan hitungKeliling()</p>
 <p><img src="gambar/pertanyaan5_segitiga.jpg"></p>
+<hr>
+<b>Latihan Praktikum</b>
+<p>1. Menghitung Luas Permukaan dan Volume Bangun ruang</p>
+<p>Kode class kerucut : </p>
+<p><img src="gambar/kode_kerucut.jpg"></p>
+<p>Kode class limas : </p>
+<p><img src="gambar/kode_limas.jpg"></p>
+<p>Kode class bola : </p>
+<p><img src="gambar/kode_bola.jpg"></p>
+<p>Kode class main (sebelum modifikasi) : </p>
+<p><img src="gambar/kode_main.png"></p>
+<p>Kode class main (setelah modifikasi) : </p>
+<p><img src="gambar/kode_main_modifikasi.png"></p>
+<p>Hasil program (setelah modifikasi) : </p>
+<p><img src="gambar/hasil_bangunRuang.jpg"></p>
