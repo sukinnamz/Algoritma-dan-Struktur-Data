@@ -30,3 +30,14 @@
 <p>Hasil Program : </p>
 <p><img src = "gambar/hasil_percobaan2.jpg"></p>
 <p>Pertanyaan</p>
+<p>1. Apakah array of object dapat diimplementasikan pada array 2 Dimensi?</p>
+<p>Jawab : Iya, array of object dapat diimplementasikan pada array 2 Dimensi</p>
+<p>2. Jika jawaban soal no satu iya, berikan contohnya! Jika tidak, jelaskan!</p>
+<p>Jawab : Contohnya bisa ditemukan pada kasus penyimpanan barang toko swalayan yang tiap barisnya dipisahkan sesuai kategori barang</p>
+<p>3. Jika diketahui terdapat class Persegi yang memiliki atribut sisi bertipe integer, maka kode dibawah ini akan memunculkan error saat dijalankan. Mengapa?</p>
+<p>Jawab : Error dikarenakan belum dilakukan instansiasi secara terpisah pada objek pgArray[5] hanya ada instansiasi array pgArray</p>
+<p>4. Modifikasi kode program pada praktikum 3.3 agar length array menjadi inputan dengan Scanner!</p>
+<p><img src="gambar/modifikasi_percobaan2.jpg"></p>
+<p>5. Apakah boleh Jika terjadi duplikasi instansiasi array of objek, misalkan saja instansiasi dilakukan pada ppArray[i] sekaligus ppArray[0]?Jelaskan !
+</p>
+<p>Jawab : Boleh, tidak terjadi error <b>namun</b> nilai panjang lebar pada objek dengan indeks 0 nilainya akan digantikan dengan instansiasi dengan pengisian nilai atribut saat looping</p>
