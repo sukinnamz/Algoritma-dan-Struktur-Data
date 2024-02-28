@@ -1,0 +1,32 @@
+# Laporan Jobsheet III Algoritma dan Struktur Data
+<p align="center">
+   <img src="https://static.wikia.nocookie.net/logopedia/images/8/8a/Politeknik_Negeri_Malang.png/revision/latest?cb=20190922202558 " alt="Logo Polinema" width="30%"> 
+</p>
+<hr>
+<p align="center">Nama : Innama Maesa Putri</p>
+<p align="center">NIM : 2341720235</p>
+<hr>
+<b>Percobaan 1 : Membuat Array dari Object, Mengisi dan Menampilkan</b>
+<p>Kode Program Persegi panjang : </p>
+<p><img src = "gambar/hasil_PersegiPanjangPercobaan1.jpg"></p>
+<p>Kode Program Main : </p>
+<p><img src = "gambar/hasil_MainPercobaan1.jpg"></p>
+<p>Hasil Program : </p>
+<p><img src = "gambar/hasil_percobaan1.jpg"></p><p>Pertanyaan</p>
+<p>1. Berdasarkan uji coba 3.2, apakah class yang akan dibuat array of object harus selalu memiliki atribut dan sekaligus method?Jelaskan!</p>
+<p>Jawab : Tidak, jika suatu class akan dibuat array of object namun tidak memiliki atribut dan sekaligus method ia hanya akan bisa meng-instansiasi array of objects dan atribut objek di dalam class tersebut.</p>
+<p>2. Apakah class PersegiPanjang memiliki konstruktor?Jika tidak, kenapa dilakukan pemanggilan konstruktur pada baris program berikut</p>
+<p>Jawab : Dalam kasus ini, konstruktor tidak didefinisikan di dalam class. Namun setiap instansiaso objek selalu dibutuhkan konstruktor dari kelas yang diwujudkan ke dalam objek</p>
+<p>3. Apa yang dimaksud dengan kode berikut ini</p>
+<p>Jawab : Instansiasi array of object dengan nama ppArray dari class persegi panjang yang akan berisi 3 elemen</p>
+<p>4. Apa yang dimaksud dengan kode berikut ini</p>
+<p>Jawab : Instansiasi objek pada indeks ke-0 atau pada elemen pertama dari array of objects ppArray dengan atribut objek berupa panjang dan lebar yang bernilai 80 dan 40 </p>
+<p>5. Mengapa class main dan juga class PersegiPanjang dipisahkan pada uji coba 3.2</p>
+<p>Jawab : Karena class merupakan PersegiPanjang merupakan konsep persegi panjang yang perlu diwujudkan dalam sebuah objek. Perwujudan tersebut dilakukan di class main dengan proses instansiasi</p>
+<hr>
+<b>Percobaan 2 : Menerima Input Isian Array Menggunakan Looping</b>
+<p>Kode Program : </p>
+<p><img src = "gambar/kode_percobaan2.jpg"></p>
+<p>Hasil Program : </p>
+<p><img src = "gambar/hasil_percobaan2.jpg"></p>
+<p>Pertanyaan</p>
