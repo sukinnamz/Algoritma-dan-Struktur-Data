@@ -61,3 +61,14 @@ switch-case!</p>
 <p>3. Program perhitungan keuntungan suatu perusahaan ini hanya untuk satu perusahaan saja. Bagaimana cara menghitung sekaligus keuntungan beberapa bulan untuk beberapa perusahaan.(Setiap perusahaan bisa saja memiliki jumlah bulan berbeda-beda)? Buktikan dengan program!</p>
 <p>Jawab : </p>
 <p><img src="gambar/modifikasiPercobaan3.jpg"><img src="gambar/hasilModifikasiPercobaan3.jpg"></p>
+<hr>
+<p>Latihan 1 : </p>
+a) top_acceleration tertinggi menggunakan Divide and Conquer!<br>
+b) top_acceleration terendah menggunakan Divide and Conquer!<br>
+c) Rata-rata top_power dari seluruh mobil menggunakan Brute Force!<br>
+<p>Kode Program : </p>
+<p><img src ="gambar/codeLatihan1.jpg"></p>
+<p>Kode Program Main : </p>
+<p><img src ="gambar/mainLatihan1.jpg"></p>
+<p>Hasil Program : </p>
+<p><img src ="gambar/hasilLatihan1.jpg"></p>
