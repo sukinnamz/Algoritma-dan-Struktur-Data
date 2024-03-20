@@ -1,4 +1,4 @@
-# Laporan Jobsheet IV Algoritma dan Struktur Data
+# Laporan Jobsheet V Algoritma dan Struktur Data
 <p align="center">
    <img src="https://static.wikia.nocookie.net/logopedia/images/8/8a/Politeknik_Negeri_Malang.png/revision/latest?cb=20190922202558 " alt="Logo Polinema" width="30%"> 
 </p>
@@ -53,3 +53,14 @@
 <p>Ubahlah fungsi pada InsertionSort sehingga fungsi ini dapat melaksanakan proses sorting dengan cara descending.</p>
 <img src="gambar/kodePertanyaan_3.jpg"><br>
 <img src="gambar/HasilPertanyaan_3.jpg">
+<hr>
+## Latihan
+<p>Kode program :</p>
+<img src="gambar/kode1Latihan.jpg"><br>
+<img src="gambar/kode21Latihan.jpg"><br>
+<img src="gambar/kode22Latihan.jpg"><br>
+<img src="gambar/kode3Latihan.jpg">
+<p>Hasil program : </p>
+<img src="gambar/hasil1Latihan.jpg"><br>
+<img src="gambar/hasil2Latihan.jpg"><br>
+<img src="gambar/hasil3Latihan.jpg">
