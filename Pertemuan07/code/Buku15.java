@@ -1,10 +1,10 @@
 package Pertemuan07.code;
 
 public class Buku15 {
-    int kodeBuku, tahunTerbit, stock;
-    String judulBuku, pengarang;
+    int tahunTerbit, stock;
+    String kodeBuku, judulBuku, pengarang;
 
-    Buku15(int kodeBuku, String judulBuku, int tahunTerbit, String pengarang, int stock) {
+    Buku15(String kodeBuku, String judulBuku, int tahunTerbit, String pengarang, int stock) {
         this.kodeBuku = kodeBuku;
         this.judulBuku = judulBuku;
         this.tahunTerbit = tahunTerbit;

@@ -58,9 +58,22 @@
 <p>Jawab : Hasil tidak sesuai dikarenakan data tidak urut, cara mengubahnya adalah mengurutkan data nya terlebih dahulu</p>
 <img src="gambar/pertanyaan41percobaan2.jpg"><br>
 <img src="gambar/pertanyaan42percobaan2.jpg">
+<hr>
 ## Percobaan 3
 <p>Kode Program : </p>
 <img src="gambar/kode1percobaan3.png"><br>
 <img src="gambar/kode2percobaan3.png">
 <p>Hasil Program : </p>
 <img src="gambar/hasilPercobaan3.jpg"><br>
+<hr>
+## Latihan
+1. Modifikasi percobaan searching diatas dengan ketentuan berikut ini<br>
+- Ubah tipe data dari kode Buku yang awalnya int menjadi String<br>
+- Tambahkan method untuk pencarian kode Buku (bertipe data String) dengan menggunakan<br>
+sequential search dan binary search.
+<p>Kode program : </p>
+<img src="gambar/kode1latihan1.jpg"><br>
+<img src="gambar/kode2latihan1.jpg"><br>
+<img src="gambar/kode3latihan1.jpg"><br>
+<p>Hasil program : </p>
+<img src="gambar/hasil1latihan1.jpg">
