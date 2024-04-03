@@ -76,4 +76,16 @@ sequential search dan binary search.
 <img src="gambar/kode2latihan1.jpg"><br>
 <img src="gambar/kode3latihan1.jpg"><br>
 <p>Hasil program : </p>
-<img src="gambar/hasil1latihan1.jpg">
+<img src="gambar/hasil1latihan1.jpg"><br>
+2. Modifikasi percobaan searching diatas dengan ketentuan berikut ini<br>
+- Tambahkan method pencarian judul buku menggunakan sequential search dan binary<br>
+search. Sebelum dilakukan searching dengan binary search data harus dilakukan pengurutan<br>
+dengan menggunakan algoritma Sorting (bebas pilih algoritma sorting apapun)! Sehingga<br>
+ketika input data acak, maka algoritma searching akan tetap berjalan<br>
+- Buat aturan untuk mendeteksi hasil pencarian judul buku yang lebih dari 1 hasil dalam<br>
+bentuk kalimat peringatan! Pastikan algoritma yang diterapkan sesuai dengan kasus yang<br>
+diberikan!
+<p>Kode program : </p>
+<img src="gambar/hasil1latihan2.jpg">
+<p>Hasil program : </p>
+<img src="gambar/hasil1latihan2.jpg">
