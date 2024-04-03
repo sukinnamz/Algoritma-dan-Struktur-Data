@@ -346,3 +346,107 @@ Barang teratas : Radio
 ```
 
 <br>
+5. Commit dan push kode program ke Github
+<hr>
+## Percobaan 2
+<p>Kode program : </p>
+
+```
+Gudang15.java
+
+public String KonversiDesimalKeBiner(int kode) {
+        StackKonversi stack = new StackKonversi();
+        while (kode > 0) {
+            int sisa = kode % 2;
+            stack.push(sisa);
+            kode = kode / 2;
+        }
+        String biner = new String();
+        while (!stack.isEmpty()) {
+            biner += stack.pop();
+        }
+        return biner;
+    }
+```
+
+```
+StackKonversi.java
+
+package Pertemuan08.code;
+
+public class StackKonversi {
+    int size;
+    int[] tumpukanBiner;
+    int top;
+
+    StackKonversi(){
+        this.size = 32;
+        tumpukanBiner = new int[size];
+        top = -1;
+    }
+
+    public boolean isEmpty(){
+        return top == -1;
+    }
+
+    public boolean isFull(){
+        return top == size -1;
+    }
+
+    public void push(int data){
+        if (isFull()) {
+            System.out.println("Stack penuh");
+        } else {
+            top++;
+            tumpukanBiner[top] = data;
+        }
+    }
+
+    public int pop(){
+        if (isEmpty()){
+            System.out.println("Stack kosong");
+            return -1;
+        } else {
+            int data = tumpukanBiner[top];
+            top--;
+            return data;
+        }
+    }
+}
+
+```
+
+<p>Hasil program : </p>
+
+```
+Menu : 
+1. Tambah barang
+2. Ambil barang
+3. Tampilkan tumpukan barang
+4. Tampilkan barang teratas 
+5. Keluar
+Pilih operasi : 1
+Masukkan kode barang : 13
+Masukkan nama barang : Setrika
+Masukkan nama kategori : Elektronik
+Barang Setrika berhasil ditambahkan ke gudang
+
+Menu : 
+1. Tambah barang
+2. Ambil barang
+3. Tampilkan tumpukan barang
+4. Tampilkan barang teratas 
+5. Keluar
+Pilih operasi : 2
+Barang Setrika diambil dari gudang
+Kode unik dalam biner : 1101
+
+```
+
+<p>Pertanyaan</p>
+1. Pada method konversiDesimalKeBiner, ubah kondisi perulangan menjadi while (kode != 0), bagaimana hasilnya? Jelaskan alasannya! <br>
+Jawab : Output program tetap sama dikarenakan kode != 0 sama dengan kode > 0 yang berarti semua kode diperbolehkan asal tidak 0 <br>
+2. Jelaskan alur kerja dari method konversiDesimalKeBiner!<br>
+Jawab : Method KonversiDesimalKeBiner dimulai dengan menerima bilangan bulat (desimal) sebagai parameter dan mengembalikan hasil konversinya dalam bentuk string yang merepresentasikan bilangan tersebut dalam sistem biner. Sebuah stack dideklarasikan untuk menyimpan sisa pembagian bilangan desimal selama proses konversi. Program melakukan pembagian berturut-turut dari bilangan desimal dengan 2, dengan menyimpan sisa pembagian sebagai digit biner dalam stack. Setelah itu, digit-diginya dikeluarkan dari stack dan disusun dalam bentuk string biner. Hasil konversi tersebut dikembalikan sebagai hasil dari method.
+<hr>
+## Percobaan 3
