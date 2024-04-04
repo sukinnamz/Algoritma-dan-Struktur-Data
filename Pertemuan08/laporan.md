@@ -450,3 +450,139 @@ Jawab : Output program tetap sama dikarenakan kode != 0 sama dengan kode > 0 yan
 Jawab : Method KonversiDesimalKeBiner dimulai dengan menerima bilangan bulat (desimal) sebagai parameter dan mengembalikan hasil konversinya dalam bentuk string yang merepresentasikan bilangan tersebut dalam sistem biner. Sebuah stack dideklarasikan untuk menyimpan sisa pembagian bilangan desimal selama proses konversi. Program melakukan pembagian berturut-turut dari bilangan desimal dengan 2, dengan menyimpan sisa pembagian sebagai digit biner dalam stack. Setelah itu, digit-diginya dikeluarkan dari stack dan disusun dalam bentuk string biner. Hasil konversi tersebut dikembalikan sebagai hasil dari method.
 <hr>
 ## Percobaan 3
+<p>Kode Program : </p>
+
+```
+Postfix15.java
+
+package Pertemuan08.code;
+
+public class Postfix15 {
+    int n, top;
+    char stack[];
+
+    Postfix15(int total) {
+        n = total;
+        top = -1;
+        stack = new char[n];
+        push('(');
+    }
+
+    public void push(char c) {
+        top++;
+        stack[top] = c;
+    }
+
+    public char pop() {
+        char item = stack[top];
+        top--;
+        return item;
+    }
+
+    public boolean IsOperand(char c) {
+        if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9') || c == ' ' || c == '.') {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean IsOperator(char c) {
+        if (c == '^' || c == '%' || c == '/' || c == '*' || c == '-' || c == '+') {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public int derajat(char c) {
+        switch (c) {
+            case '^':
+                return 3;
+            case '%':
+                return 2;
+            case '/':
+                return 2;
+            case '*':
+                return 2;
+            case '-':
+                return 1;
+            case '+':
+                return 1;
+            default:
+                return 0;
+        }
+    }
+
+    public String konversi(String Q) {
+        String P = "";
+        char c;
+        for (int i = 0; i < stack.length; i++) {
+            c = Q.charAt(i);
+            if (IsOperand(c)) {
+                P = P + c;
+            }
+            if (c == '(') {
+                push(c);
+            }
+            if (c == ')') {
+                while (stack[top] != '(') {
+                    P = P + pop();
+                }
+                pop();
+            }
+            if (IsOperator(c)) {
+                while (derajat(stack[top]) >= derajat(c)) {
+                    P = P + pop();
+                }
+                push(c);
+            }
+        }
+        return P;
+    }
+}
+```
+
+```
+PostfixMain15.java
+
+package Pertemuan08.code;
+import java.util.Scanner;
+public class PostfikMain15 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String P, Q;
+        System.out.println("Masukkan ekspresi matematika (infix) : ");
+        Q = sc.nextLine();
+        Q = Q.trim();
+        Q = Q + ")";
+
+        int total = Q.length();
+
+        Postfix15 post = new Postfix15(total);
+        P = post.konversi(Q);
+        System.out.println("Postfix : " + P);
+    }
+}
+```
+<p>Hasil Program : </p>
+
+```
+Masukkan ekspresi matematika (infix) : 
+a+b*(c+d-e)/f  
+Postfix : abcd+e-*f/+
+```
+
+<p>Pertanyaan</p>
+1. Pada method derajat, mengapa return value beberapa case bernilai sama? Apabila return value diubah dengan nilai berbeda-beda setiap case-nya, apa yang terjadi?<br>
+Jawab : Dikarenakan return value yang sama menunjukkan derajat dan prioritas operator yang sama. Jika diganti maka pada saat konversi hasilnya akan berubah.<br>
+2. Jelaskan alur kerja method konversi!<br>
+Jawab : Method ini melakukan iterasi pada setiap karakter dalam string input Q. Jika karakter adalah operand (huruf, angka, dll.), maka karakter tersebut langsung ditambahkan ke string output P. Jika karakter adalah tanda kurung buka '(', maka karakter tersebut dimasukkan ke dalam stack. Jika karakter adalah tanda kurung tutup ')', maka karakter-karakter dalam stack akan dikeluarkan satu per satu sampai bertemu tanda kurung buka '(' yang sesuai. Jika karakter adalah operator (+, -, *, /, dll.), maka karakter-karakter dalam stack akan dikeluarkan satu per satu hingga derajat operator di stack lebih rendah dari derajat operator saat ini, kemudian karakter saat ini akan dimasukkan ke dalam stack. Setelah iterasi selesai, string hasil konversi postfix P akan dikembalikan.<br>
+3. Pada method konversi, apa fungsi dari potongan kode berikut?<br>
+Jawab : memasukkan setiap karakter(c) dari String Q pada variabel c yang akan di passing ke method lainnya sebelum di konversi. <br>
+<hr>
+## Latihan
+Perhatikan dan gunakan kembali kode program pada Percobaan 1. Tambahkan dua method berikut pada class Gudang: <br>
+• Method lihatBarangTerbawah digunakan untuk mengecek barang pada tumpukan terbawah <br>
+• Method cariBarang digunakan untuk mencari ada atau tidaknya barang berdasarkan kode barangnya atau nama barangnya <br>
+<p>Kode program : </p>

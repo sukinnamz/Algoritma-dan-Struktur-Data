@@ -60,6 +60,17 @@ public class Gudang15 {
         }
     }
 
+    public Barang15 lihatBarangTerbawah() {
+        if (!cekKosong()) {
+            Barang15 barangTerbawah = tumpukan[0];
+            System.out.println("Barang terbawah : " + barangTerbawah.nama);
+            return barangTerbawah;
+        } else {
+            System.out.println("Tumpukan barang kosong");
+            return null;
+        }
+    }
+
     void tampilkanBarang() {
         if (!cekKosong()) {
             System.out.println("Rincian tumpukan barang di Gudang");
