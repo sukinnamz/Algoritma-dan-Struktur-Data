@@ -96,4 +96,46 @@ public class Gudang15 {
         }
         return biner;
     }
+
+    public Barang15 cariKode(int kode) {
+        if (!cekKosong()) {
+            int pos = -1;
+            for (int i = 0; i < tumpukan.length; i++) {
+                if (tumpukan[i].kode == kode) {
+                    pos = i;
+                    break;
+                } else {
+                    System.out.println("Barang dengan kode " + kode + " tidak ditemukan");
+                    return null;
+                }
+            }
+            System.out.println("Barang yang anda cari dengan kode " + kode + " adalah " + tumpukan[pos].nama
+                    + " dengan kategori " + tumpukan[pos].kategori);
+            return tumpukan[pos];
+        } else {
+            System.out.println("Tumpukan barang kosong");
+            return null;
+        }
+    }
+
+    public Barang15 cariNama(String nama) {
+        if (!cekKosong()) {
+            int pos = -1;
+            for (int i = 0; i < tumpukan.length; i++) {
+                if (tumpukan[i].nama.equals(nama)) {
+                    pos = i;
+                    break;
+                } else {
+                    System.out.println("Barang dengan nama " + nama + " tidak ditemukan");
+                    return null;
+                }
+            }
+            System.out.println("Barang yang anda cari dengan nama " + nama + " dengan kode " + tumpukan[pos].kode
+                    + " dengan kategori " + tumpukan[pos].kategori);
+            return tumpukan[pos];
+        } else {
+            System.out.println("Tumpukan barang kosong");
+            return null;
+        }
+    }
 }

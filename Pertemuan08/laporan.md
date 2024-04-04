@@ -586,3 +586,140 @@ Perhatikan dan gunakan kembali kode program pada Percobaan 1. Tambahkan dua meth
 • Method lihatBarangTerbawah digunakan untuk mengecek barang pada tumpukan terbawah <br>
 • Method cariBarang digunakan untuk mencari ada atau tidaknya barang berdasarkan kode barangnya atau nama barangnya <br>
 <p>Kode program : </p>
+
+```
+Gudang15.java method lihat barang terbawah
+
+public Barang15 lihatBarangTerbawah() {
+        if (!cekKosong()) {
+            Barang15 barangTerbawah = tumpukan[0];
+            System.out.println("Barang terbawah : " + barangTerbawah.nama);
+            return barangTerbawah;
+        } else {
+            System.out.println("Tumpukan barang kosong");
+            return null;
+        }
+    }
+```
+
+```
+Gudang15,java method cari barang dengan kode dan nama
+
+public Barang15 cariKode(int kode) {
+        if (!cekKosong()) {
+            int pos = -1;
+            for (int i = 0; i < tumpukan.length; i++) {
+                if (tumpukan[i].kode == kode) {
+                    pos = i;
+                    System.out.println("Barang yang anda cari dengan kode " + kode + " adalah " + tumpukan[i].nama
+                            + " dengan kategori " + tumpukan[i].kategori);
+                    break;
+                } else {
+                    System.out.println("Barang dengan kode " + kode + " tidak ditemukan");
+                    return null;
+                }
+            }
+            return tumpukan[pos];
+        } else {
+            System.out.println("Tumpukan barang kosong");
+            return null;
+        }
+    }
+
+    public Barang15 cariNama(String nama) {
+        if (!cekKosong()) {
+            int pos = -1;
+            for (int i = 0; i < tumpukan.length; i++) {
+                if (tumpukan[i].nama.equals(nama)) {
+                    pos = i;
+                    System.out.println("Barang yang anda cari dengan nama " + nama + " dengan kode " + tumpukan[i].kode
+                            + " dengan kategori " + tumpukan[i].kategori);
+                    break;
+                } else {
+                    System.out.println("Barang dengan nama " + nama + " tidak ditemukan");
+                    return null;
+                }
+            }
+            return tumpukan[pos];
+        } else {
+            System.out.println("Tumpukan barang kosong");
+            return null;
+        }
+    }
+```
+
+<p>Hasil Program : </p>
+
+```
+Masukkan kapasitas gudang : 3
+
+Menu : 
+1. Tambah barang
+2. Ambil barang
+3. Tampilkan tumpukan barang
+4. Tampilkan barang teratas 
+5. Tampilkan barang terbawah
+6. Cari barang
+5. Keluar
+Pilih operasi : 1
+Masukkan kode barang : 1
+Masukkan nama barang : Penguin
+Masukkan nama kategori : Boneka
+Barang Penguin berhasil ditambahkan ke gudang
+
+Menu : 
+1. Tambah barang
+2. Ambil barang
+3. Tampilkan tumpukan barang
+4. Tampilkan barang teratas 
+5. Tampilkan barang terbawah
+6. Cari barang
+5. Keluar
+Pilih operasi : 1
+Masukkan kode barang : 2
+Masukkan nama barang : Laptop
+Masukkan nama kategori : Elektronik
+Barang Laptop berhasil ditambahkan ke gudang
+
+Menu :
+1. Tambah barang
+2. Ambil barang
+3. Tampilkan tumpukan barang
+4. Tampilkan barang teratas
+5. Tampilkan barang terbawah
+6. Cari barang
+5. Keluar
+Pilih operasi : 1
+Masukkan kode barang : 3
+Masukkan nama barang : Lotion
+Masukkan nama kategori : Skincare
+Barang Lotion berhasil ditambahkan ke gudang
+
+Menu :
+1. Tambah barang
+2. Ambil barang
+3. Tampilkan tumpukan barang
+4. Tampilkan barang teratas
+5. Tampilkan barang terbawah
+6. Cari barang
+5. Keluar
+Pilih operasi : 5
+Barang terbawah : Penguin
+
+Menu :
+1. Tambah barang
+2. Ambil barang
+3. Tampilkan tumpukan barang
+4. Tampilkan barang teratas
+5. Tampilkan barang terbawah
+6. Cari barang
+5. Keluar
+Pilih operasi : 6
+Pilih tipe pencarian : 
+1. Cari dengan kode
+2. Cari dengan nama
+Pilihan : 1
+Masukkan kode barang : 1
+Barang yang anda cari dengan kode 1 adalah Penguin dengan kategori Boneka
+
+```
