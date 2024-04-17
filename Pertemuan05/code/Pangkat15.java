@@ -3,7 +3,7 @@ package Pertemuan05.code;
 public class Pangkat15 {
     public int nilai, pangkat;
 
-    Pangkat15(int a, int n){
+    Pangkat15(int a, int n) {
         nilai = a;
         pangkat = n;
     }
