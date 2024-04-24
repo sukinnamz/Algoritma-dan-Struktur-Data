@@ -1,8 +1,6 @@
-package Pertemuan10.Praktikum2;
+package Pertemuan10.Tugas;
 
 import java.util.Scanner;
-
-import Pertemuan10.Praktikum1.Queue15;
 
 public class QueueMain {
     public static void menu() {
@@ -12,7 +10,8 @@ public class QueueMain {
         System.out.println("3. Cek antrian terdepan");
         System.out.println("4. Cek semua atrian");
         System.out.println("5. Cek antrian belakang");
-        System.out.println("6. Keluar");
+        System.out.println("6. Cari posisi pembeli");
+        System.out.println("7. Keluar");
         System.out.println("----------------------------------");
     }
 
@@ -30,39 +29,34 @@ public class QueueMain {
             pilih = sc15.nextInt();
             switch (pilih) {
                 case 1:
-                    System.out.print("No rekening : ");
-                    String norek = sa.nextLine();
                     System.out.print("Nama : ");
                     String nama = sa.nextLine();
-                    System.out.print("Alamat : ");
-                    String alamat = sa.nextLine();
-                    System.out.print("Umur : ");
-                    int umur = sc15.nextInt();
-                    System.out.print("Saldo : ");
-                    int saldo = sc15.nextInt();
-                    Nasabah15 nb = new Nasabah15(norek, nama, alamat, umur, saldo);
+                    System.out.print("No HP : ");
+                    int noHP = sc15.nextInt();
+                    Pembeli15 nb = new Pembeli15(nama, noHP);
                     Q.enqueue(nb);
                     break;
                 case 2:
-                    Nasabah15 data = Q.dequeue();
-                    if (!"".equals(data.norek) && !"".equals(data.nama) && !"".equals(data.alamat) && data.umur != 0
-                            && data.saldo != 0) {
-                        System.out.println("Data yang dikeluarkan : " + data.norek + " " + data.nama + " " + data.alamat
-                                + " " + data.umur + " " + data.saldo);
+                    Pembeli15 data = Q.dequeue();
+                    if (!"".equals(data.nama) && data.noHP != 0) {
+                        System.out.println("Data yang dikeluarkan : " + data.nama + " " + data.noHP);
                     }
                     break;
                 case 3:
                     Q.peek();
                     break;
                 case 4:
-                    Q.print();
+                    Q.daftarPembeli();
                     break;
                 case 5:
                     Q.peekRear();
                     break;
-                default:
+                case 6:
+                    System.out.print("Masukkan nama pembeli yang ingin dicari : ");
+                    String cariNama = sa.nextLine();
+                    Q.peekPosition(cariNama);
                     break;
             }
-        } while (pilih == 1 || pilih == 2 || pilih == 3 || pilih == 4 || pilih == 5);
+        } while (pilih == 1 || pilih == 2 || pilih == 3 || pilih == 4 || pilih == 5 || pilih == 6);
     }
 }

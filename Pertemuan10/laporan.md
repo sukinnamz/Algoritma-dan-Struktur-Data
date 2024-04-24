@@ -667,3 +667,129 @@ public class QueueMain {
 }
 
 ```
+
+<hr>
+## Tugas
+<p>!!! Kode program di package Tugas untuk mempersingkat laporan !!!</p>
+<p>Hasil program : </p>
+
+```
+Masukkan kapasitas queue : 5
+Pilih menu : 
+1. Antrian baru
+2. Antrian keluar
+3. Cek antrian terdepan
+4. Cek semua atrian
+5. Cek antrian belakang
+6. Cari posisi pembeli
+7. Keluar
+----------------------------------
+1
+Nama : Innam
+No HP : 874627
+Pilih menu : 
+1. Antrian baru
+2. Antrian keluar
+3. Cek antrian terdepan
+4. Cek semua atrian
+5. Cek antrian belakang
+6. Cari posisi pembeli
+7. Keluar
+----------------------------------
+1
+Nama : Farrel
+No HP : 8362893
+Pilih menu : 
+1. Antrian baru
+2. Antrian keluar
+3. Cek antrian terdepan
+4. Cek semua atrian
+5. Cek antrian belakang
+6. Cari posisi pembeli
+7. Keluar
+----------------------------------
+1
+Nama : Vira
+No HP : 83746271
+Pilih menu : 
+1. Antrian baru
+2. Antrian keluar
+3. Cek antrian terdepan
+4. Cek semua atrian
+5. Cek antrian belakang
+6. Cari posisi pembeli
+7. Keluar
+----------------------------------
+1
+Nama : Topek
+No HP : 8364672
+Pilih menu : 
+1. Antrian baru
+2. Antrian keluar
+3. Cek antrian terdepan
+4. Cek semua atrian
+5. Cek antrian belakang
+6. Cari posisi pembeli
+7. Keluar
+----------------------------------
+3
+Elemen terdepan : Innam 874627
+Pilih menu : 
+1. Antrian baru
+2. Antrian keluar
+3. Cek antrian terdepan
+4. Cek semua atrian
+5. Cek antrian belakang
+6. Cari posisi pembeli
+7. Keluar
+----------------------------------
+2
+Data yang dikeluarkan : Innam 874627
+Pilih menu :
+1. Antrian baru
+2. Antrian keluar
+3. Cek antrian terdepan
+4. Cek semua atrian
+5. Cek antrian belakang
+6. Cari posisi pembeli
+7. Keluar
+----------------------------------
+4
+Farrel 8362893
+Vira 83746271
+Topek 8364672
+Jumlah elemen = 3
+Pilih menu :
+1. Antrian baru
+2. Antrian keluar
+3. Cek antrian terdepan
+4. Cek semua atrian
+5. Cek antrian belakang
+6. Cari posisi pembeli
+7. Keluar
+----------------------------------
+5
+Elemen paling belakang : Topek 8364672
+Pilih menu :
+1. Antrian baru
+2. Antrian keluar
+3. Cek antrian terdepan
+4. Cek semua atrian
+5. Cek antrian belakang
+6. Cari posisi pembeli
+7. Keluar
+----------------------------------
+6
+Masukkan nama pembeli yang ingin dicari : Vira
+Pelanggan yang anda cari berada pada posisi ke 3
+Pilih menu :
+1. Antrian baru
+2. Antrian keluar
+3. Cek antrian terdepan
+4. Cek semua atrian
+5. Cek antrian belakang
+6. Cari posisi pembeli
+7. Keluar
+----------------------------------
+7
+```
