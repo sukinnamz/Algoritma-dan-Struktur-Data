@@ -298,14 +298,120 @@ dipelajari sebelumnya untuk menginputkan data. <br>
 <p>Hasil program : </p>
 
 ```
-Linked List Kosong
-Isi Linked List         NIM : 111 Nama : Anton | 
-Isi Linked List         NIM : 111 Nama : Anton | NIM : 115 Nama : Sari | 
-Isi Linked List         NIM : 111 Nama : Anton | NIM : 112 Nama : Prita | NIM : 115 Nama : Sari | 
-Isi Linked List         NIM : 111 Nama : Anton | NIM : 112 Nama : Prita | NIM : 113 Nama : Yusuf | NIM : 115 Nama : Sari | 
-Isi Linked List         NIM : 111 Nama : Anton | NIM : 112 Nama : Prita | NIM : 113 Nama : Yusuf | NIM : 114 Nama : Doni | NIM : 115 Nama : Sari |
+NIM : 111 Nama : Anton |
+NIM : 111 Nama : Anton | NIM : 115 Nama : Sari |
+NIM : 111 Nama : Anton | NIM : 112 Nama : Prita | NIM : 115 Nama : Sari |
+NIM : 111 Nama : Anton | NIM : 112 Nama : Prita | NIM : 113 Nama : Yusuf | NIM : 115 Nama : Sari |
+NIM : 111 Nama : Anton | NIM : 112 Nama : Prita | NIM : 113 Nama : Yusuf | NIM : 114 Nama : Doni | NIM : 115 Nama : Sari |
 ```
 
 2 Buatlah implementasi program antrian layanan unit kemahasiswaan sesuai dengan kondisi yang ditunjukkan pada soal nomor 1! Ketentuan <br>
 a. Implementasi antrian menggunakan Queue berbasis Linked List! <br>
 b. Program merupakan proyek baru, bukan modifikasi dari soal nomor 1!<br>
+<p>Kode Program : (Kode program pada file Mahasiswa Queue dan Queue Main)</p>
+<p>Hasil program : </p>
+
+```
+=================================
+Layanan Unit Kemahasiswaan       
+=================================
+1. Tambah antrean
+2. Keluarkan antrean
+3. Lihat seluruh antrean
+4. Lihat antrean terdepan
+5. Keluar
+Pilih menu : -> 1
+Masukkan nim : 111
+Masukkan nama : Anton
+=================================
+Layanan Unit Kemahasiswaan
+=================================
+1. Tambah antrean
+2. Keluarkan antrean
+3. Lihat seluruh antrean
+4. Lihat antrean terdepan
+5. Keluar
+Pilih menu : -> 1
+Masukkan nim : 112
+Masukkan nama : Prita
+=================================
+Layanan Unit Kemahasiswaan
+=================================
+1. Tambah antrean
+2. Keluarkan antrean
+3. Lihat seluruh antrean
+4. Lihat antrean terdepan
+5. Keluar
+Pilih menu : -> 1
+Masukkan nim : 113
+Masukkan nama : Yusuf
+=================================
+Layanan Unit Kemahasiswaan
+=================================
+1. Tambah antrean
+2. Keluarkan antrean
+3. Lihat seluruh antrean
+4. Lihat antrean terdepan
+5. Keluar
+Pilih menu : -> 1
+Masukkan nim : 114
+Masukkan nama : Doni
+=================================
+Layanan Unit Kemahasiswaan
+=================================
+1. Tambah antrean
+2. Keluarkan antrean
+3. Lihat seluruh antrean
+4. Lihat antrean terdepan
+5. Keluar
+Pilih menu : -> 1
+Masukkan nim : 115
+Masukkan nama : Sari
+=================================
+Layanan Unit Kemahasiswaan
+=================================
+1. Tambah antrean
+2. Keluarkan antrean
+3. Lihat seluruh antrean
+4. Lihat antrean terdepan
+5. Keluar
+Pilih menu : -> 3
+Daftar Antrean : 
+NIM : 111 Nama : Anton
+NIM : 112 Nama : Prita
+NIM : 113 Nama : Yusuf
+NIM : 114 Nama : Doni
+NIM : 115 Nama : Sari
+
+=================================
+Layanan Unit Kemahasiswaan
+=================================
+1. Tambah antrean
+2. Keluarkan antrean
+3. Lihat seluruh antrean
+4. Lihat antrean terdepan
+5. Keluar
+Pilih menu : -> 2
+Data dengan nim 111 dan nama Anton berhasil keluar antrean.
+=================================
+Layanan Unit Kemahasiswaan
+=================================
+1. Tambah antrean
+2. Keluarkan antrean
+3. Lihat seluruh antrean
+4. Lihat antrean terdepan
+5. Keluar
+Pilih menu : -> 4
+Mahasiswa yang paling depan: 
+NIM: 112 | Nama: Prita
+=================================
+Layanan Unit Kemahasiswaan
+=================================
+1. Tambah antrean
+2. Keluarkan antrean
+3. Lihat seluruh antrean
+4. Lihat antrean terdepan
+5. Keluar
+Pilih menu : -> 5
+Input tidak valid
+```
