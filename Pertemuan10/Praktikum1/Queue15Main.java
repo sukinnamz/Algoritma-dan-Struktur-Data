@@ -32,19 +32,19 @@ public class Queue15Main {
                     int dataMasuk = sc15.nextInt();
                     Q.enqueue(dataMasuk);
                     break;
-                case 2 :
+                case 2:
                     int dataKeluar = Q.dequeue();
                     if (dataKeluar != 0) {
                         System.out.println("Data yang dikeluarkan : " + dataKeluar);
                     }
                     break;
-                case 3 : 
+                case 3:
                     Q.print();
                     break;
-                case 4 : 
+                case 4:
                     Q.peek();
                     break;
-                case 5 : 
+                case 5:
                     Q.clear();
                     break;
                 default:

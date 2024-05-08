@@ -115,11 +115,13 @@ public class Queue {
         int pos = -1;
         int i = front;
         while (i != rear) {
+            pos = front;
             if (antrean[i].nama.equals(nama)) {
                 pos = i;
             }
             i = (i + 1) % max;
         }
+        pos = i;
         if (pos > 0) {
             System.out.println("Pelanggan yang anda cari berada pada posisi ke " + (pos + 1));
         } else {
