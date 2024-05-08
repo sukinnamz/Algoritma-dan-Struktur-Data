@@ -159,3 +159,131 @@ Jawab : Kode ini digunakan untuk memeriksa apakah node yang baru dimasukkan akan
 
 <hr>
 
+# Percobaan 2
+<p>Kode program : </p>
+
+```
+tambahan pada class singlelinkedlist
+
+int getData(int index) {
+        Node15 tmp = head;
+        for (int i = 0; i < index - 1; i++) {
+            tmp = tmp.next;
+        }
+        return tmp.next.data;
+    }
+
+    int indexOf(int key) {
+        Node15 tmp = head;
+        int index = 0;
+        while (tmp != null && tmp.data != key) {
+            tmp = tmp.next;
+            index++;
+        }
+        if (tmp == null) {
+            return -1;
+        } else {
+            return index;
+        }
+    }
+
+    void removeFirst() {
+        if (isEmpty()) {
+            System.out.println("Linked list masih kosong, tidak dapat dihapus");
+        } else if (head == tail) {
+            head = tail = null;
+        } else {
+            head = head.next;
+        }
+    }
+
+    void removeLast() {
+        if (isEmpty()) {
+            System.out.println("Linked list masih kosong, tidak dapat dihapus");
+        } else if (head == tail) {
+            head = tail = null;
+        } else {
+            Node15 temp = head;
+            while (temp.next == null) {
+                temp = temp.next;
+            }
+            temp.next = null;
+            tail = temp.next;
+        }
+    }
+
+    void remove(int key) {
+        if (isEmpty()) {
+            System.out.println("Linked List masih kosong, tidak dapat dihapus");
+        } else {
+            Node15 temp = head;
+            while (temp != null) {
+                if (temp.data == key && temp == head) {
+                    removeFirst();
+                    break;
+                } else if (temp.next.data == key) {
+                    temp.next = temp.next.next;
+                    if (temp.next == null) {
+                        tail = temp;
+                    }
+                    break;
+                }
+                temp = temp.next;
+            }
+        }
+    }
+
+    public void removeAt(int index) {
+        if (index == 0) {
+            removeFirst();
+        } else {
+            Node15 temp = head;
+            for (int i = 0; i < index; i++) {
+                temp = temp.next;
+            }
+            temp.next = temp.next.next;
+            if (temp.next == null) {
+                tail = temp;
+            }
+        }
+    }
+```
+
+```
+tambahan class main
+
+System.out.println("Data pada indeks ke - 1 " + singLL.getData(1));
+        System.out.println("Data 3 berada pada indeks ke- " + singLL.indexOf(760));
+
+        singLL.remove(999);
+        singLL.print();
+        singLL.removeAt(0);
+        singLL.print();
+        singLL.removeFirst();
+        singLL.print();
+        singLL.removeLast();
+        singLL.print();
+```
+
+<p>Hasil program : </p>
+
+```
+Linked List Kosong
+Isi Linked List         890
+Isi Linked List         890     760
+Isi Linked List         700     890     760
+Isi Linked List         700     999     890     760
+Isi Linked List         700     999     890     833     760
+Data pada indeks ke - 1 999
+Data 3 berada pada indeks ke- 4
+Isi Linked List         700     890     833     760
+Isi Linked List         890     833     760
+Isi Linked List         833     760
+Isi Linked List         833
+```
+
+<p>Pertanyaan</p>
+1. Mengapa digunakan keyword break pada fungsi remove? Jelaskan! <br>
+Jawab : Untuk keluar dari perulangan while setelah menemukan nilai yang ditemukan untuk kemudian dihapus. <br>
+2. Jelaskan kegunaan kode dibawah pada method remove <br>
+Jawab : Digunakan untuk menghapus node yang memiliki nilai data yang sama dengan nilai key yang dicari yang kemudian digantikan dengan nilai selanjutnya.
