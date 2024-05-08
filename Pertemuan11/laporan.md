@@ -6,6 +6,7 @@
 <p align="center">Nama : Innama Maesa Putri</p>
 <p align="center">NIM : 2341720235</p>
 <hr>
+
 # Percobaan 1
 <p>Kode program : </p>
 
@@ -287,3 +288,24 @@ Isi Linked List         833
 Jawab : Untuk keluar dari perulangan while setelah menemukan nilai yang ditemukan untuk kemudian dihapus. <br>
 2. Jelaskan kegunaan kode dibawah pada method remove <br>
 Jawab : Digunakan untuk menghapus node yang memiliki nilai data yang sama dengan nilai key yang dicari yang kemudian digantikan dengan nilai selanjutnya.
+
+<hr>
+
+# Tugas
+1. Implementasikan ilustrasi Linked List Berikut. Gunakan 4 macam penambahan data yang telah
+dipelajari sebelumnya untuk menginputkan data. <br>
+<p>Kode Program : (Untuk mempersingkat laporan, kode program berada pada file Mahasiswa15, MahasiswaLinkedList, dan MahasiswaMain)</p>
+<p>Hasil program : </p>
+
+```
+Linked List Kosong
+Isi Linked List         NIM : 111 Nama : Anton | 
+Isi Linked List         NIM : 111 Nama : Anton | NIM : 115 Nama : Sari | 
+Isi Linked List         NIM : 111 Nama : Anton | NIM : 112 Nama : Prita | NIM : 115 Nama : Sari | 
+Isi Linked List         NIM : 111 Nama : Anton | NIM : 112 Nama : Prita | NIM : 113 Nama : Yusuf | NIM : 115 Nama : Sari | 
+Isi Linked List         NIM : 111 Nama : Anton | NIM : 112 Nama : Prita | NIM : 113 Nama : Yusuf | NIM : 114 Nama : Doni | NIM : 115 Nama : Sari |
+```
+
+2 Buatlah implementasi program antrian layanan unit kemahasiswaan sesuai dengan kondisi yang ditunjukkan pada soal nomor 1! Ketentuan <br>
+a. Implementasi antrian menggunakan Queue berbasis Linked List! <br>
+b. Program merupakan proyek baru, bukan modifikasi dari soal nomor 1!<br>
