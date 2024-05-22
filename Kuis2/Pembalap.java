@@ -6,7 +6,6 @@ package Kuis2;
 public class Pembalap {
     String nama, tim, konstruktor;
     int poinTotal = 0, posisi, match, poin;
-    int[] kumpulanPoin = new int[20];
 
     Pembalap(String nama, String tim, String konstruktor, int posisi, int match) {
         this.nama = nama;
@@ -71,7 +70,6 @@ public class Pembalap {
     }
 
     void hitungPoinTotal(int a) {
-        kumpulanPoin[match] = a;
         poinTotal += a;
     }
 

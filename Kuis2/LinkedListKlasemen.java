@@ -24,7 +24,7 @@ public class LinkedListKlasemen {
                 System.out
                         .println(String.format("%-4d %-30s %-30s %-15s %-10d %-22d %-10d", klasemen, tmp.pembalap.nama,
                                 tmp.pembalap.tim, tmp.pembalap.konstruktor, tmp.pembalap.posisi,
-                                tmp.pembalap.kumpulanPoin[indexPoin],
+                                tmp.pembalap.poin,
                                 tmp.pembalap.poinTotal));
                 tmp = tmp.next;
                 klasemen++;
