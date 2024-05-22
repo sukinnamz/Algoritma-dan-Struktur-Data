@@ -16,7 +16,7 @@ public class Pembalap {
         this.match = match;
     }
 
-    void addPoint() {
+    int addPoint() {
         switch (posisi) {
             case 1:
                 poin = 25;
@@ -67,13 +67,12 @@ public class Pembalap {
                 poin = 0;
                 break;
         }
-        kumpulanPoin[match] = poin;
+        return poin;
     }
 
-    void hitungPoinTotal() {
-        for (int i = 0; i < kumpulanPoin.length; i++) {
-            poinTotal += kumpulanPoin[i];
-        }
+    void hitungPoinTotal(int a) {
+        kumpulanPoin[match] = a;
+        poinTotal += a;
     }
 
 }

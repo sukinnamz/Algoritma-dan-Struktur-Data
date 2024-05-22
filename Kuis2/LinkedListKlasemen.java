@@ -54,8 +54,7 @@ public class LinkedListKlasemen {
             if (temp.pembalap.nama.equals(nama)) {
                 temp.pembalap.posisi = posisi;
                 temp.pembalap.match = match;
-                temp.pembalap.addPoint();
-                temp.pembalap.hitungPoinTotal();
+                temp.pembalap.hitungPoinTotal(temp.pembalap.addPoint());
                 return;
             }
             temp = temp.next;
