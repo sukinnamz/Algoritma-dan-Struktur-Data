@@ -1,5 +1,7 @@
 package Kuis2;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         LinkedListKlasemen klasemen = new LinkedListKlasemen();
@@ -34,6 +36,8 @@ public class Main {
             klasemen.tambahPembalap(namaPembalap[i], timPembalap[i], konstruktorPembalap[i]);
         }
 
+        Scanner scanner = new Scanner(System.in);
+
         for (int match = 0; match < 20; match++) {
             int[] availablePositions = new int[namaPembalap.length];
             for (int i = 0; i < namaPembalap.length; i++) {
@@ -45,16 +49,18 @@ public class Main {
                 int posisi = availablePositions[i];
                 klasemen.updatePoin(namaPembalap[i], posisi, match);
             }
+
             System.out.println("Klasemen setelah pertandingan ke-" + (match + 1) + ":");
             klasemen.printKlasemen();
-            
+
+            System.out.println("=> Enter untuk lanjut, Ctrl + C untuk keluar");
+            scanner.nextLine();
         }
 
+        scanner.close();
     }
 
-    static void shuffleArray(int[] array) { // mengacak array agar tiap pembalap mendapat posisi unik, karena tadi saya
-                                            // langsung pakai math random ada yng duplikat, sedangkan di motogp tidak
-                                            // ada begitu
+    static void shuffleArray(int[] array) {
         for (int i = array.length - 1; i > 0; i--) {
             int index = (int) (Math.random() * (i + 1));
             int temp = array[index];
