@@ -158,3 +158,17 @@ Size : 0
 ```
 
 <p>Pertanyaan</p>
+1. Jelaskan perbedaan antara single linked list dengan double linked lists! <br>
+Jawab : Menurut saya perbedaan mendasarnya ada pada bagian pointer previous di double linked list, yang menunjukkan node sebelumnya dan pointer next yang menunjukkan ke node selanjutnya. Sedangkan pada single linked list hanya memiliki satu pointer yaitu next. <br>
+2. Perhatikan class Node, di dalamnya terdapat atribut next dan prev. Untuk apakah atribut tersebut? <br>
+Jawab : Sebagai pointer untuk menunjukkan objek atau node setelah dan sebelum nya.
+3. Perhatikan konstruktor pada class DoubleLinkedLists. Apa kegunaan inisialisasi atribut head dan size seperti pada gambar berikut ini? <br>
+Jawab : Untuk inisialisasi awal double linked list kosong. <br>
+4. Pada method addFirst(), kenapa dalam pembuatan object dari konstruktor class Node prev dianggap sama dengan null? <br>
+Jawab : Karena untuk menambahkan node pertama, previous node tersebut bernilai null <br>
+5. Perhatikan pada method addFirst(). Apakah arti statement head.prev = newNode ? <br>
+Jawab : Jika pada double linked list sudah terdapat isi, maka saat menambahkan node baru di awal harus ditempatkan sebelum head sehingga node baru bisa menjadi head baru. <br>
+6. Perhatikan isi method addLast(), apa arti dari pembuatan object Node dengan mengisikan parameter prev dengan current, dan next dengan null? <br>
+Jawab : Karena saat menambahkan node di akhir tidak perlu menambahkan pointer next karena tempatnya sudah diakhir sehingga next bernilai null. <br>
+7. Pada method add(), terdapat potongan kode program sebagai berikut ... jelaskan maksud dari bagian yang ditandai dengan kotak kuning. <br>
+Jawab : Menangani kasus di mana kita ingin menyisipkan node baru di awal (sebagai node pertama) dari double linked list. Dengan langkah langkah memeriksa apakah node saat ini (current) adalah node pertama (prev adalah null). Kemudian membuat node baru yang menunjuk ke current sebagai node berikutnya. Memperbarui node current untuk menunjuk kembali ke node baru sebagai node sebelumnya. Memperbarui pointer head untuk menunjuk ke node baru, menjadikannya node pertama.
