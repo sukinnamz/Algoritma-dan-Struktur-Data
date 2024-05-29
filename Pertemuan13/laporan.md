@@ -290,7 +290,8 @@ Jawab : Untuk mengganti posisi head pada node selanjutnya, dan menghapus node pe
 Jawab : Menggunakan perulangan while hingga next dari node bernilai null yang menunjukkan bahwa node tersebut adalah node terakhir. Node tersebut disimpan dalam variabel tmp dan data terakhir ada lah data yang ada pada tmp. <br>
 3. Jelaskan alasan potongan kode program di bawah ini tidak cocok untuk perintah remove! <br>
 Jawab : Jika node yang dihapus adalah node pertama (head), atau node terakhir, perlu penanganan khusus. Untuk node pertama, head perlu diperbarui. Untuk node terakhir, tmp.next adalah null, sehingga tmp.next.prev akan memicu kesalahan. Jika potongan kode dijalankan tanpa validasi dan penyesuaian yang tepat, struktur daftar berhubungan dapat menjadi rusak karena hubungan prev-next yang tidak konsisten. <br>
-
+4. Jelaskan fungsi kode program berikut ini pada fungsi remove! <br>
+Jawab : Untuk mengganti refrensi next dari node sebelum node current yang di remove dengan node setelah node current, dan mengganri refrensi previous node setelah current dengan node sebelum current.
 <hr>
 
 # Percobaan 3
@@ -379,3 +380,13 @@ Data awal pada Linked Lists adalah : 7
 Data akhir pada Linked Lists adalah : 4
 Data indeks ke-1 pada Linked Lists adalah : 40
 ```
+
+<p>Pertanyaan</p>
+1. Jelaskan method size() pada class DoubleLinkedLists! <br>
+Jawab : Untuk menampilkan banyaknya node yang ada pada linked list <br>
+2. Jelaskan cara mengatur indeks pada double linked lists supaya dapat dimulai dari indeks ke1! <br>
+Jawab : Ketika akan melakukan perulangan, tmp diisi dengan head.next <br>
+3. Jelaskan perbedaan karakteristik fungsi Add pada Double Linked Lists dan Single Linked Lists! <br>
+Jawab : Pada dasarnya konsep fungsi add sama yaitu menambahkan node baru pada index yang ditentukan, perbedaan mendasarnya hanya pada add pada DLL harus mengganti refrensi next dan previous sedangkan pada SLL hanya mengganti refrensi next saja <br>
+4. Jelaskan perbedaan logika dari kedua kode program di bawah ini! <br>
+Jawab : Pada kode pertama dilakukan pengecekan size terlebih dahulu, jika size = 0 maka isEmpty bernilai true. Namun pada kode kedua langsung mengembalikan nilai boolean pada pernyataan head == null, jika memang head == null akan mengembalikan nilai false dataupun sebaliknya.
