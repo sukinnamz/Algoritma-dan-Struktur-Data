@@ -59,8 +59,8 @@ public class DoubleLinkedLists {
             }
             Node newNode = new Node(current, item, null);
             current.next = newNode;
+            size++;
         }
-        size++;
     }
 
     public void add(int item, int index) throws Exception {
@@ -172,3 +172,118 @@ Jawab : Jika pada double linked list sudah terdapat isi, maka saat menambahkan n
 Jawab : Karena saat menambahkan node di akhir tidak perlu menambahkan pointer next karena tempatnya sudah diakhir sehingga next bernilai null. <br>
 7. Pada method add(), terdapat potongan kode program sebagai berikut ... jelaskan maksud dari bagian yang ditandai dengan kotak kuning. <br>
 Jawab : Menangani kasus di mana kita ingin menyisipkan node baru di awal (sebagai node pertama) dari double linked list. Dengan langkah langkah memeriksa apakah node saat ini (current) adalah node pertama (prev adalah null). Kemudian membuat node baru yang menunjuk ke current sebagai node berikutnya. Memperbarui node current untuk menunjuk kembali ke node baru sebagai node sebelumnya. Memperbarui pointer head untuk menunjuk ke node baru, menjadikannya node pertama.
+
+<hr>
+
+# Percobaan 2
+<p>Kode Program :</p>
+
+```
+Class DoubleLinkedLists
+
+public void removeFirst() throws Exception {
+        if (isEmpty()) {
+            throw new Exception("Linked List masih kosong, tidak dapat dihapus");
+        } else if (size == 1) {
+            removeLast();
+        } else {
+            head = head.next;
+            head.prev = null;
+            size--;
+        }
+    }
+
+    public void removeLast() throws Exception {
+        if (isEmpty()) {
+            throw new Exception("Linked List masih kosong, tidak dapat dihapus");
+        } else if (head.next == null) {
+            head = null;
+            size--;
+            return;
+        } else {
+            Node current = head;
+            while (current.next.next != null) {
+                current = current.next;
+            }
+            current.next = null;
+            size--;
+        }
+    }
+
+    public void remove(int index) throws Exception {
+        if (isEmpty() || index >= size) {
+            throw new Exception("Nilai indeks di luar batas");
+        } else if (index == 0) {
+            removeFirst();
+        } else {
+            Node current = head;
+            int i = 0;
+            while (i < index) {
+                current = current.next;
+                i++;
+            }
+            if (current.next == null) {
+                current.prev.next = null;
+            } else if (current.prev == null) {
+                current = current.next;
+                current.prev = null;
+                head = current;
+            } else {
+                current.prev.next = current.next;
+                current.next.prev = current.prev;
+            }
+        }
+        size--;
+    }
+```
+
+```
+Class Main
+
+        dll.addLast(50);
+        dll.addLast(40);
+        dll.addLast(10);
+        dll.addLast(20);
+        dll.print();
+        System.out.println("Size  : " + dll.size());
+        System.out.println("============================================");
+        dll.removeFirst();
+        dll.print();
+        System.out.println("Size  : " + dll.size());
+        System.out.println("============================================");
+        dll.removeLast();
+        dll.print();
+        System.out.println("Size  : " + dll.size());
+        System.out.println("============================================");
+        dll.remove(1);
+        dll.print();
+        System.out.println("Size  : " + dll.size());
+```
+
+<p>Hasil Program :</p>
+
+```
+50      40      10      20
+berhasil diisi
+Size  : 4
+============================================
+40      10      20
+berhasil diisi
+Size  : 3
+============================================
+40      10
+berhasil diisi
+Size  : 2
+============================================
+40
+berhasil diisi
+Size  : 1
+```
+
+<p>Pertanyaan</p>
+
+<hr>
+
+# Percobaan 3
+
+<p></p>
