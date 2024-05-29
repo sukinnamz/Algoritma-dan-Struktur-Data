@@ -286,4 +286,87 @@ Size  : 1
 
 # Percobaan 3
 
-<p></p>
+<p>Kode Program : </p>
+
+```
+Class DoubleLinkedLists
+
+public int getFirst() throws Exception {
+        if (isEmpty()) {
+            throw new Exception("Linked List Kosong");
+        } else {
+            return head.data;
+        }
+    }
+
+    public int getLast() throws Exception {
+        if (isEmpty()) {
+            throw new Exception("Linked List kosong");
+        } else {
+            Node tmp = head;
+            while (tmp.next != null) {
+                tmp = tmp.next;
+            }
+            return tmp.data;
+        }
+    }
+
+    public int get(int index) throws Exception {
+        if (isEmpty() || index >= size) {
+            throw new Exception("Nilai indeks di luar batas");
+        } else {
+            Node tmp = head;
+            for (int i = 0; i < index; i++) {
+                tmp = tmp.next;
+            }
+            return tmp.data;
+        }
+    }
+```
+
+```
+Class Main
+
+        DoubleLinkedLists dll = new DoubleLinkedLists();
+        dll.print();
+        System.out.println("Size : " + dll.size());
+        System.out.println("===========================================");
+        dll.addFirst(3);
+        dll.addLast(4);
+        dll.addFirst(7);
+        dll.print();
+        System.out.println("Size : " + dll.size());
+        System.out.println("============================================");
+        dll.add(40, 1);
+        dll.print();
+        System.out.println("Size : " + dll.size());
+        System.out.println("============================================");
+        // dll.clear();
+        // dll.print();
+        System.out.println("Size : " + dll.size());
+        System.out.println("============================================");
+        System.out.println("Data awal pada Linked Lists adalah : " + dll.getFirst());
+        System.out.println("Data akhir pada Linked Lists adalah : " + dll.getLast());
+        System.out.println("Data indeks ke-1 pada Linked Lists adalah : " + dll.get(1));
+```
+
+<p>Hasil Program : </p>
+
+```
+Linked Lists Kosong
+Size : 0
+===========================================
+7       3       4
+berhasil diisi
+Size : 3
+============================================
+7       40      3       4
+berhasil diisi
+Size : 4
+============================================
+Size : 4
+============================================
+Data awal pada Linked Lists adalah : 7
+Data akhir pada Linked Lists adalah : 4
+Data indeks ke-1 pada Linked Lists adalah : 40
+```
