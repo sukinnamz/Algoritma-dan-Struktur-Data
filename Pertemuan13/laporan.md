@@ -282,6 +282,15 @@ Size  : 1
 
 <p>Pertanyaan</p>
 
+1. Apakah maksud statement berikut pada method removeFirst()? <br>
+head = head.next;<br>
+head.prev = null; <br>
+Jawab : Untuk mengganti posisi head pada node selanjutnya, dan menghapus node pertama atau head sebelumnya. <br>
+2. Bagaimana cara mendeteksi posisi data ada pada bagian akhir pada method removeLast()? <br>
+Jawab : Menggunakan perulangan while hingga next dari node bernilai null yang menunjukkan bahwa node tersebut adalah node terakhir. Node tersebut disimpan dalam variabel tmp dan data terakhir ada lah data yang ada pada tmp. <br>
+3. Jelaskan alasan potongan kode program di bawah ini tidak cocok untuk perintah remove! <br>
+Jawab : Jika node yang dihapus adalah node pertama (head), atau node terakhir, perlu penanganan khusus. Untuk node pertama, head perlu diperbarui. Untuk node terakhir, tmp.next adalah null, sehingga tmp.next.prev akan memicu kesalahan. Jika potongan kode dijalankan tanpa validasi dan penyesuaian yang tepat, struktur daftar berhubungan dapat menjadi rusak karena hubungan prev-next yang tidak konsisten. <br>
+
 <hr>
 
 # Percobaan 3
