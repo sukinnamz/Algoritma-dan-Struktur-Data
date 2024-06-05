@@ -71,6 +71,9 @@ public class Graphmain15 {
                     gedung.updateJarak(asal1, tujuan1, jarak1);
                     break;
 
+                case 7:
+                    System.out.println("Jumlah edge yang tersedia : " + gedung.hitungEdge());
+                    break;
                 default:
                     System.out.println("Menu tidak valid. Silakan pilih lagi.");
                     break;

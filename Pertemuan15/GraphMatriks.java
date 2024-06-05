@@ -52,4 +52,5 @@ public class GraphMatriks {
     public int degree(int v) {
         return inDegree(v) + outDegree(v);
     }
+    
 }

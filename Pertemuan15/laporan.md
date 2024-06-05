@@ -760,3 +760,99 @@ Menu:
 Pilih menu: 8
 Keluar dari program.
 ```
+
+<p>Hitung edge : </p>
+
+```
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Update jarak
+7. Hitung edge
+8. Exit
+Pilih menu: 1
+Masukkan asal : 0
+Masukkan tujuan : 1
+Masukkan jarak : 50
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Update jarak
+7. Hitung edge
+8. Exit
+Pilih menu: 1
+Masukkan asal : 0
+Masukkan tujuan : 2
+Masukkan jarak : 100
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Update jarak
+7. Hitung edge
+8. Exit
+Pilih menu: 1
+Masukkan asal : 1
+Masukkan tujuan : 3
+Masukkan jarak : 70
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Update jarak
+7. Hitung edge
+8. Exit
+Pilih menu: 1
+Masukkan asal : 2
+Masukkan tujuan : 3
+Masukkan jarak : 70
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Update jarak
+7. Hitung edge
+8. Exit
+Pilih menu: 4
+Gedung A terhubung dengan 
+C (100m), B (50m), 
+Gedung B terhubung dengan
+D (70m),
+Gedung C terhubung dengan
+D (70m),
+
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Update jarak
+7. Hitung edge
+8. Exit
+Pilih menu: 7
+Jumlah edge yang tersedia : 4
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Update jarak
+7. Hitung edge
+8. Exit
+Pilih menu: 8
+Keluar dari program.
+```
