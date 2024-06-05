@@ -165,7 +165,7 @@ public class BinaryTreeMain14 {
                     successor.left = current.left;
                 }
             }
-
+ 
         }
 
      }// end of delete method
@@ -191,7 +191,7 @@ public class BinaryTreeMain14 {
         bt.traversePostOrder(bt.root);
         System.out.println("");
         System.out.println("Find note : "+bt.find(5));
-        System.out.println("Delete Node 8 ");
+        System.out.println("Delete Node 8 ");   
         bt.delete(8);
         System.out.println("");
         System.out.print("PreOrder Traversal : ");
