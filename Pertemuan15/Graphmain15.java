@@ -1,8 +1,71 @@
 package Pertemuan15;
 
+import java.util.Scanner;
+
 public class Graphmain15 {
     public static void main(String[] args) throws Exception {
-        // Graph15 gedung = new Graph15(6);
+        Graph15 gedung = new Graph15(6);
+        int menu;
+        Scanner sc = new Scanner(System.in);
+        do {
+            System.out.println("Menu:");
+            System.out.println("1. Add Edge");
+            System.out.println("2. Remove Edge");
+            System.out.println("3. Degree");
+            System.out.println("4. Print Graph");
+            System.out.println("5. Cek Edge");
+            System.out.println("6. Exit");
+            System.out.print("Pilih menu: ");
+            menu = sc.nextInt();
+
+            switch (menu) {
+                case 1:
+                    System.out.print("Masukkan asal : ");
+                    int asal = sc.nextInt();
+                    System.out.print("Masukkan tujuan : ");
+                    int tujuan = sc.nextInt();
+                    System.out.print("Masukkan jarak : ");
+                    int jarak = sc.nextInt();
+                    gedung.addEdge(asal, tujuan, jarak);
+                    break;
+
+                case 2:
+                    System.out.print("Masukkan asal : ");
+                    asal = sc.nextInt();
+                    System.out.print("Masukkan tujuan : ");
+                    tujuan = sc.nextInt();
+                    gedung.removeEdge(asal, tujuan);
+                    break;
+
+                case 3:
+                    System.out.print("Masukkan vertex : ");
+                    int v = sc.nextInt();
+                    gedung.degree(v);
+                    break;
+
+                case 4:
+                    gedung.printGraph();
+                    break;
+
+                case 5:
+                    System.out.print("Masukkan asal : ");
+                    asal = sc.nextInt();
+                    System.out.print("Masukkan tujuan : ");
+                    tujuan = sc.nextInt();
+                    gedung.cekTetangga(asal, tujuan);
+                    break;
+
+                case 6:
+                    System.out.println("Keluar dari program.");
+                    break;
+
+                default:
+                    System.out.println("Menu tidak valid. Silakan pilih lagi.");
+                    break;
+            }
+
+        } while (menu != 6);
+
         // gedung.addEdge(0, 1, 50);
         // gedung.addEdge(0, 2, 100);
         // gedung.addEdge(1, 3, 70);

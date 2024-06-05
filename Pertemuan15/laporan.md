@@ -509,3 +509,152 @@ d) Print Graph <br>
 e) Cek Edge <br>
 Pengguna dapat memilih menu program melalui input Scanner <br>
 Jawab :
+
+```
+Hasil Program 
+==========================
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Exit
+Pilih menu: 1
+Masukkan asal : 0
+Masukkan tujuan : 1
+Masukkan jarak : 50
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Exit
+Pilih menu: 1
+Masukkan asal : 0
+Masukkan tujuan : 2
+Masukkan jarak : 100
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Exit
+Pilih menu: 1
+Masukkan asal : 1
+Masukkan tujuan : 3
+Masukkan jarak : 70
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Exit
+Pilih menu: 1
+Masukkan asal : 2
+Masukkan tujuan : 3
+Masukkan jarak : 40
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Exit
+Pilih menu: 1
+Masukkan asal : 3
+Masukkan tujuan : 4
+Masukkan jarak : 60
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Exit
+Pilih menu: 1
+Masukkan asal : 4
+Masukkan tujuan : 5
+Masukkan jarak : 80
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Exit
+Pilih menu: 3
+Masukkan vertex : 0
+InDegree dari Gedung A : 0
+OutDegree dari Gedung A : 2
+Degree dari Gedung A : 2
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Exit
+Pilih menu: 4
+Gedung A terhubung dengan 
+C (100m), B (50m), 
+Gedung B terhubung dengan
+D (70m), 
+Gedung C terhubung dengan 
+D (40m), 
+Gedung D terhubung dengan 
+E (60m), 
+Gedung E terhubung dengan
+F (80m),
+
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Exit
+Pilih menu: 2
+Masukkan asal : 1
+Masukkan tujuan : 3
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Exit
+Pilih menu: 4
+Gedung A terhubung dengan 
+C (100m), B (50m),
+Gedung C terhubung dengan
+D (40m),
+Gedung D terhubung dengan
+E (60m),
+Gedung E terhubung dengan
+F (80m), 
+
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Exit
+Pilih menu: 5
+Masukkan asal : 2
+Masukkan tujuan : 3
+Gedung C dan D bertetangga
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Exit
+Pilih menu: 6
+Keluar dari program.
+```
