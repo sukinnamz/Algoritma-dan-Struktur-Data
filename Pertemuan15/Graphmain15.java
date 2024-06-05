@@ -14,7 +14,9 @@ public class Graphmain15 {
             System.out.println("3. Degree");
             System.out.println("4. Print Graph");
             System.out.println("5. Cek Edge");
-            System.out.println("6. Exit");
+            System.out.println("6. Update jarak");
+            System.out.println("7. Hitung edge");
+            System.out.println("8. Exit");
             System.out.print("Pilih menu: ");
             menu = sc.nextInt();
 
@@ -55,8 +57,18 @@ public class Graphmain15 {
                     gedung.cekTetangga(asal, tujuan);
                     break;
 
-                case 6:
+                case 8:
                     System.out.println("Keluar dari program.");
+                    break;
+
+                case 6:
+                    System.out.print("Masukkan asal : ");
+                    int asal1 = sc.nextInt();
+                    System.out.print("Masukkan tujuan : ");
+                    int tujuan1 = sc.nextInt();
+                    System.out.print("Masukkan jarak : ");
+                    int jarak1 = sc.nextInt();
+                    gedung.updateJarak(asal1, tujuan1, jarak1);
                     break;
 
                 default:
@@ -64,7 +76,7 @@ public class Graphmain15 {
                     break;
             }
 
-        } while (menu != 6);
+        } while (menu != 8);
 
         // gedung.addEdge(0, 1, 50);
         // gedung.addEdge(0, 2, 100);

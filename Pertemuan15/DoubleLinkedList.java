@@ -169,4 +169,19 @@ public class DoubleLinkedList {
             return tmp.data;
         }
     }
+
+    public void updateJarak(int item, int newJarak) throws Exception {
+        if (isEmpty()) {
+            throw new Exception("Linked List Kosong");
+        }
+        Node15 current = head;
+        while (current != null) {
+            if (current.data == item) {
+                current.jarak = newJarak;
+                return;
+            }
+            current = current.next;
+        }
+        throw new Exception("Node tidak ditemukan");
+    }
 }

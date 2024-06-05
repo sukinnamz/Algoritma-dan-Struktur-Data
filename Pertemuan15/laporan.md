@@ -658,3 +658,105 @@ Menu:
 Pilih menu: 6
 Keluar dari program.
 ```
+
+<p>Update jarak</p>
+```
+
+Menu:
+1. Add Edge   
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Update jarak
+7. Hitung edge
+8. Exit
+Pilih menu: 1
+Masukkan asal : 0
+Masukkan tujuan : 1
+Masukkan jarak : 10
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Update jarak
+7. Hitung edge
+8. Exit
+Pilih menu: 1
+Masukkan asal : 1
+Masukkan tujuan : 2
+Masukkan jarak : 40
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Update jarak
+7. Hitung edge
+8. Exit
+Pilih menu: 1
+Masukkan asal : 2
+Masukkan tujuan : 3
+Masukkan jarak : 100
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Update jarak
+7. Hitung edge
+8. Exit
+Pilih menu: 4
+Gedung A terhubung dengan 
+B (10m), 
+Gedung B terhubung dengan
+C (40m),
+Gedung C terhubung dengan
+D (100m),
+
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Update jarak
+7. Hitung edge
+8. Exit
+Pilih menu: 6
+Masukkan asal : 0
+Masukkan tujuan : 1
+Masukkan jarak : 65
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Update jarak
+7. Hitung edge
+8. Exit
+Pilih menu: 4
+Gedung A terhubung dengan 
+B (65m), 
+Gedung B terhubung dengan 
+C (40m), 
+Gedung C terhubung dengan 
+D (100m),
+
+Menu:
+1. Add Edge
+2. Remove Edge
+3. Degree
+4. Print Graph
+5. Cek Edge
+6. Update jarak
+7. Hitung edge
+8. Exit
+Pilih menu: 8
+Keluar dari program.
+```

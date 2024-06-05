@@ -42,7 +42,7 @@ public class Graph15 {
         }
     }
 
-    public void removeALlEdges() {
+    public void removeAllEdges() {
         for (int i = 0; i < vertex; i++) {
             list[i].clear();
         }
@@ -67,13 +67,17 @@ public class Graph15 {
             for (int i = 0; i < list[asal].size; i++) {
                 int nextNode = list[asal].get(i);
                 if (nextNode == tujuan) {
-                    System.out.println("Gedung " + (char) ('A' + asal) + " dan " + (char) ('A'
-                            + tujuan) + " bertetangga");
+                    System.out.println(
+                            "Gedung " + (char) ('A' + asal) + " dan " + (char) ('A' + tujuan) + " bertetangga");
                 } else {
-                    System.out.println("Gedung " + (char) ('A' + asal) + " dan " + (char) ('A'
-                            + tujuan) + " tidak bertetangga");
+                    System.out.println(
+                            "Gedung " + (char) ('A' + asal) + " dan " + (char) ('A' + tujuan) + " tidak bertetangga");
                 }
             }
         }
+    }
+
+    public void updateJarak(int asal, int tujuan, int newJarak) throws Exception {
+        list[asal].updateJarak(tujuan, newJarak);
     }
 }
