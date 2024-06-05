@@ -374,3 +374,138 @@ public void cekTetangga(int asal, int tujuan) throws Exception {
         }
     }
 ```
+
+# Percobaan 2
+
+<p>Kode Program</p>
+
+```
+Class matriks
+
+package Pertemuan15;
+
+public class GraphMatriks {
+    int vertex;
+    int[][] matriks;
+
+    GraphMatriks(int v) {
+        vertex = v;
+        matriks = new int[v][v];
+    }
+
+    public void makeEdge(int asal, int tujuan, int jarak) {
+        matriks[asal][tujuan] = jarak;
+    }
+
+    public void removeEdge(int asal, int tujuan) {
+        matriks[asal][tujuan] = 0;
+    }
+
+    public void printGraph() {
+        for (int i = 0; i < vertex; i++) {
+            System.out.println("Gedung " + (char) ('A' + i) + " : ");
+            for (int j = 0; j < vertex; j++) {
+                if (matriks[i][j] != -1) {
+                    System.out.print("Gedung " + (char) +('A' + j) + " (" + matriks[i][j] + " m), ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+```
+
+```
+Class Main
+
+GraphMatriks gdg = new GraphMatriks(4);
+        gdg.makeEdge(0, 1, 50);
+        gdg.makeEdge(1, 0, 60);
+        gdg.makeEdge(1, 2, 70);
+        gdg.makeEdge(2, 1, 80);
+        gdg.makeEdge(2, 3, 40);
+        gdg.makeEdge(3, 0, 90);
+        gdg.printGraph();
+        System.out.println("Hasil setelah penghapusan edge");
+        gdg.removeEdge(2, 1);
+        gdg.printGraph();
+```
+
+<p>Hasil Program</p>
+
+```
+Gedung A : 
+Gedung A (0 m), Gedung B (50 m), Gedung C (0 m), Gedung D (0 m), 
+Gedung B : 
+Gedung A (60 m), Gedung B (0 m), Gedung C (70 m), Gedung D (0 m),
+Gedung C : 
+Gedung A (0 m), Gedung B (80 m), Gedung C (0 m), Gedung D (40 m),
+Gedung D :
+Gedung A (90 m), Gedung B (0 m), Gedung C (0 m), Gedung D (0 m), 
+Hasil setelah penghapusan edge
+Gedung A : 
+Gedung A (0 m), Gedung B (50 m), Gedung C (0 m), Gedung D (0 m),
+Gedung B : 
+Gedung A (60 m), Gedung B (0 m), Gedung C (70 m), Gedung D (0 m), 
+Gedung C :
+Gedung A (0 m), Gedung B (0 m), Gedung C (0 m), Gedung D (40 m), 
+Gedung D : 
+Gedung A (90 m), Gedung B (0 m), Gedung C (0 m), Gedung D (0 m),
+```
+
+<p>Pertanyaan</p>
+1. Perbaiki kode program Anda apabila terdapat error atau hasil kompilasi kode tidak sesuai! <br>
+Jawab : Sudah <br>
+2. Apa jenis graph yang digunakan pada Percobaan 2? <br>
+Jawab : Graph menggunakan matriks dengan tipe data array <br>
+3. Apa maksud dari dua baris kode berikut? <br>
+Jawab : Memanggil fungsi makeEdge untuk menambahkan data jarak dengan indeks asal dan tujuan ke dalam graph matriks <br>
+4. Modifikasi kode program sehingga terdapat method untuk menghitung degree, termasuk inDegree dan outDegree! <br>
+Jawab : <br>
+
+```
+Hasil : 
+
+Out-degree vertex A: 4
+In-degree vertex A: 4
+Degree vertex A: 8
+```
+
+```
+Code : 
+
+public int outDegree(int v) {
+        int outDegree = 0;
+        for (int i = 0; i < vertex; i++) {
+            if (matriks[v][i] != -1) {
+                outDegree++;
+            }
+        }
+        return outDegree;
+    }
+
+    public int inDegree(int v) {
+        int inDegree = 0;
+        for (int i = 0; i < vertex; i++) {
+            if (matriks[i][v] != -1) {
+                inDegree++;
+            }
+        }
+        return inDegree;
+    }
+
+    public int degree(int v) {
+        return inDegree(v) + outDegree(v);
+    }
+```
+
+# Latihan
+1. Modifikasi kode program pada class GraphMain sehingga terdapat menu program yang bersifat dinamis, setidaknya terdiri dari: <br>
+a) Add Edge <br>
+b) Remove Edge <br>
+c) Degree <br>
+d) Print Graph <br>
+e) Cek Edge <br>
+Pengguna dapat memilih menu program melalui input Scanner <br>
+Jawab :
